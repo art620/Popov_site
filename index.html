@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИП Попова</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="animation.js">
+
+
+
+</head>
+<body>
+    <header class="head">  <!--шапка -->
+        <div class="wrapper">  <!--блок -->
+            <div  class="head_wrapper"> <!--блок -->
+                <div  class="head_logo"> <!--логотип в шапке -->
+                    <img src="./img/svg/logo2.svg" alt="Popova Olga Nikolaevna" > <!--логотип -->
+                </div>
+    
+                <nav class="head_nav"> <!--навигация -->
+                    <ul class="head_list">
+                        <li class="head_item">
+                            <a href="#main" class="head_link">Главная</a>
+                        </li>
+                        <li class="head_item">
+                            <a href="#map" class="head_link">Офис</a>
+                        </li>
+                        <li class="head_item">
+                            <a href="#recomend" class="head_link">Отзывы</a>
+                        </li>
+                        <li class="head_item">
+                            <a href="#contacts" class="head_link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+
+    <main id="main" class="main">
+        <div class="intro">
+            <div class="wrapper">
+                <div class="foto"> 
+                    <a href="/" class="foto-link"> 
+                        <img src="./img/foto.png" style="width:600px" alt="Popova Olga Nikolaevna foto" class="head_logo-pic"> <!--логотип -->
+                    </a>
+                </div>
+                <div class="intro_dlok1">
+                    <h1  class="head1" id="123">Попова Ольга Николаевна</h1>
+                    <p class="par1">Логист/менеджер по логистике/диспетчер</p>
+                    <p class="par2">“ИП Попова” с 2010 года по сей день занимается организациями грузоперевозок по всей России </p>
+                    <button type="submit" class="end">ЕЩЁ</button>
+               </div>
+            </div>
+        </div>
+
+        <section id="map" class="map">
+            <h2 class="map_title"><img src="./img/svg/Location.svg" alt="Location" class="Location_svg"> Адрес: Г. Барнаул, пос. Южный, ул. Чайковского, 45</h2>
+            <div class="container">
+                <script type="text/javascript" class="map_yandex" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8f9d06753d9abec855e5f188269b8ac19cda0b719beadd7f068a0a0083ffb5ca&amp;width=1280&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+
+        <section class="coments_blok">
+             <div class="wrapper">
+                <h2 id="recomend" class="rec">Рекомендации от участноков АТИ </h2>
+                <p class="rec_text">Количество рекомендаций от различных компаний составляет сотни рецензий, что показывает устойчивость ИП на рынке</p>
+                <div class="rev_greed">
+                    <div class="colum">
+                        <img src="./img/rev1.jpg" alt="rev" class="review">
+                        <img src="./img/rev2.jpg" alt="rev" class="review">
+                        <img src="./img/rev3.jpg" alt="rev" class="review">
+                        <img src="./img/rev4.jpg" alt="rev" class="review">
+                    </div>
+                    <div class="colum">
+                        <img src="./img/rev5.jpg" alt="rev" class="review">
+                        <img src="./img/rev6.jpg" alt="rev" class="review">
+                        <img src="./img/rev7.jpg" alt="rev" class="review">
+                        <img src="./img/rev8.jpg" alt="rev" class="review">
+                    </div>
+                </div>
+             </div>
+        </section>
+        <div id="contacts" class="contacts">
+            <div class="wrapper">
+
+                <div class="con_right">
+                
+                    <button class="conR"> <a href="https://wa.me/79619919606?text=заказ">Написать в WhatsApp <img src="./img/svg/WhatsAppLogo.svg" alt="WhatsAppLogo" class="WhatsApp"></a> </button>
+                   <p><a href="./doc/Свидетельство ОГРН.pdf">Документы</a></p>
+                  <!--  <p class="conR1">Г. Барнаул</p>
+                    <p class="conR2">ИП Попова 2022</p>-->
+                    <div class="con_left">
+                        <h2 class="conL">Контактная информация </h2>
+                        <p  class="conL1"> Электронная почта: <a href="mailto:sibir22@mail.ru">sibir22@mail.ru</a></p>
+                        <p class="conL2">Номер телефона: <a href="tel:+79963038376">+79635033494</a></p>
+                    </div>
+                </div>
+
+                <h2 class="conL">Написать заявление </h2>
+
+                <form action="" class="statement" method="post"> <!--заявление-->
+                    <input type="text" name="FName" placeholder="Введите имя"> <!-- перенос на другую строку -->
+                    <input type="text" name="LName" placeholder="Введите фамилию"><br><br>
+                    <input type="text" name="PhoneNamder" placeholder="+7 (999) 999-99-99"><br><br>
+                    <h1 class="Choicetext">Кто ты?</h1>
+                    <div class="Choice">  
+                        <div class="form_radio_group">
+                            <div class="form_radio_group-item">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1">Заказчик</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2">Водитель</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3">Логист</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sendbutton">
+                        <button type="submit" class="send">Отправить</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
